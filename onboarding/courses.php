@@ -63,7 +63,7 @@
         <div id="page-title-container">
             <h1 id="page-title">1 / 3 • Course Creation</h1>
             <progress id="onboarding-progress" value="33" max="100"></progress>
-            <p id="onboarding-progress-desc">Onbarding Progress (33% Complete)</p>
+            <p id="onboarding-progress-desc">Onboarding Progress (33% Complete)</p>
         </div>
 
         <div id="course-tiles">
