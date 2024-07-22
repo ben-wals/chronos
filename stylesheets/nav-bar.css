@@ -1,0 +1,87 @@
+@keyframes test {
+    from {margin-top: 0;}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes example {
+    from {margin-top: 0;}
+    to {margin-top: -5px;}
+}
+
+#nav-bar {
+    background-color: #212121;
+    padding: 16px;
+    overflow: hidden;
+}
+
+#nav-list {
+    list-style-type: none;
+}
+
+.nav-left {
+    float: left;
+}
+.nav-right {
+    float: right;
+    padding: 8px 16px;
+    margin-left: 8px;
+}
+.nav-right:hover {
+    background-color: #666666;
+    border-radius: 25px;
+}
+.nav-element {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#nav-logo {
+    width: 32px;
+    height: 32px;
+    padding: 0px 8px;
+}
+
+#nav-settings {
+    padding: 8px;
+}
+
+#nav-settings:hover i {
+    animation-name: test;
+    animation-duration: 0.5s;
+}
+
+#nav-launchpad {
+    background-color: #9bbb59;
+    border-radius: 15px;
+}
+#nav-launchpad:hover {
+    background-color: #c8daa4;
+    margin-top: -5px;
+    animation-name: example;
+    animation-duration: 0.25s;
+}
+#nav-title {
+    padding: 8px;
+    margin-left: 8px;
+}
+
+@media screen and (max-width: 600px) {
+
+    #nav-timetable, #nav-tasks {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+
+    #nav-launchpad-text {
+        display: none;
+    }
+
+    #nav-launchpad {
+        padding: 8px;
+    }
+
+}

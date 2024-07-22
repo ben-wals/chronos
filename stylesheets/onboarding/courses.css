@@ -1,0 +1,13 @@
+#page-title {
+    text-align: center;
+    margin: 16px;
+}
+
+#onboarding-progress {
+    width: 100%;
+    --color: #9bbb59;
+}
+
+#onboarding-progress-desc {
+    text-align: center;
+}
