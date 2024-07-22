@@ -29,3 +29,11 @@
 .footer-link {
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 800px) {
+
+    #footer-report {
+        display: none;
+    }
+
+}
