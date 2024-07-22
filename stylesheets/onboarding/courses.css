@@ -1,6 +1,9 @@
 #page-title {
     text-align: center;
     margin: 16px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 #onboarding-progress {
@@ -10,4 +13,8 @@
 
 #onboarding-progress-desc {
     text-align: center;
+    padding: 8px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
