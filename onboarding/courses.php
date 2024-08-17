@@ -61,12 +61,16 @@
 
         <!-- Page Titles -->
         <div id="page-title-container">
-            <h1 id="page-title">1 / 3 • Course Creation</h1>
+            <h1 id="page-title"><span id="nav-frac">1 / 3 • </span>Course Creation</h1>
             <progress id="onboarding-progress" value="33" max="100"></progress>
             <p id="onboarding-progress-desc">Onboarding Progress (33% Complete)</p>
         </div>
 
         <div id="course-tiles">
+            <div class="course-tile" id="add-course-tile">
+                <h1>Add Course</h1>
+                <i class="fa-solid fa-circle-plus fa-2x"></i>
+            </div>
         </div>
 
     </div>

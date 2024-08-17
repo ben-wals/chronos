@@ -18,3 +18,36 @@
     font-weight: 400;
     font-style: normal;
 }
+
+#course-tiles {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
+    margin: 16px 0px;
+}
+
+.course-tile {
+    background-color: #424242;
+    border-radius: 25px;
+}
+
+#add-course-tile {
+    text-align: center;
+    padding: 32px;
+}
+
+#add-course-tile:hover {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #ffffff;
+    padding: 31px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+
+    #nav-frac {
+        display: none;
+    }
+
+}

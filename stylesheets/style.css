@@ -10,5 +10,6 @@ body {
 
 #page-content {
     margin: 0 7%;
-    width: 86%
+    width: 86%;
+    min-height: calc(100vh - 83px);
 }
