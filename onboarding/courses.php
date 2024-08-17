@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="../stylesheets/style.css">
     <link rel="stylesheet" href="../stylesheets/nav-bar.css">
     <link rel="stylesheet" href="../stylesheets/footer.css">
+    <link rel="stylesheet" href="../stylesheets/icon-colours.css">
 
 </head>
 <body>
@@ -67,6 +68,87 @@
         </div>
 
         <div id="course-tiles">
+            <div class="course-tile">
+                <i class="fa-solid fa-book fa-3x course-tile-icon"></i><h1 class="course-tile-title">General</h1>
+                <hr class="course-tile-divider"></hr>
+                <p class="course-tile-description">This is a general course which holds all the events for general school activities such as tutor time and assemblies.</p>
+                <div class="course-tile-component-container">
+                    <div class="course-tile-component">TT</div>
+                    <div class="course-tile-component">Ass</div>
+                    <div class="course-tile-component">AE</div>
+                </div>
+                <div class="course-tile-info-container">
+                    <div>
+                        <p><b>Locations</b></p>
+                        <p>A4, HALL, Str1</p>
+                    </div>
+                    <div>
+                        <p><b>Staff</b></p>
+                        <p>PMA, PNA, CBL, CCO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="course-tile">
+                <i class="fa-solid fa-atom fa-3x course-tile-icon"></i><h1 class="course-tile-title">Physics</h1>
+                <hr class="course-tile-divider"></hr>
+                <p class="course-tile-description">A set of different ways of thinking that have led to countless descriptions and explanations for the way the universe works.</p>
+                <div class="course-tile-component-container">
+                    <div class="course-tile-component">M1</div>
+                    <div class="course-tile-component">M2</div>
+                    <div class="course-tile-component">M3</div>
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="course-tile-info-container">
+                    <div>
+                        <p><b>Locations</b></p>
+                        <p>S10, S11</p>
+                    </div>
+                    <div>
+                        <p><b>Staff</b></p>
+                        <p>PCA, JBR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="course-tile">
+                <i class="fa-solid fa-calculator fa-3x course-tile-icon"></i><h1 class="course-tile-title">Mathematics</h1>
+                <hr class="course-tile-divider"></hr>
+                <p class="course-tile-description">The main focus of this A-Level is Pure Maths. Covering topics whic tend to be mainly algebraic in nature.</p>
+                <div class="course-tile-component-container">
+                    <div class="course-tile-component">P1</div>
+                    <div class="course-tile-component">S&M1</div>
+                    <div class="course-tile-component">P2</div>
+                    <div class="course-tile-component">S&M2</div>
+                </div>
+                <div class="course-tile-info-container">
+                    <div>
+                        <p><b>Locations</b></p>
+                        <p>A4, HALL, Str1</p>
+                    </div>
+                    <div>
+                        <p><b>Staff</b></p>
+                        <p>PMA, PNA, CBL, CCO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="course-tile">
+                <i class="fa-solid fa-laptop fa-3x course-tile-icon"></i><h1 class="course-tile-title">Computer Science</h1>
+                <hr class="course-tile-divider"></hr>
+                <p class="course-tile-description">Designed for those who wish to go on to higher education courses / employment with knowledge of computer science.</p>
+                <div class="course-tile-component-container">
+                    <div class="course-tile-component">P1</div>
+                    <div class="course-tile-component">P2</div>
+                </div>
+                <div class="course-tile-info-container">
+                    <div>
+                        <p><b>Locations</b></p>
+                        <p>1, 20, 21</p>
+                    </div>
+                    <div>
+                        <p><b>Staff</b></p>
+                        <p>SJO, PTO, GPA</p>
+                    </div>
+                </div>
+            </div>
             <div class="course-tile" id="add-course-tile">
                 <h1>Add Course</h1>
                 <i class="fa-solid fa-circle-plus fa-2x"></i>

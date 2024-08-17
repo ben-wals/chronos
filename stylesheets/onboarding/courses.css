@@ -24,11 +24,15 @@
     grid-template-columns: 32% 32% 32%;
     column-gap: 2%;
     margin: 16px 0px;
+    row-gap: 32px;
 }
 
 .course-tile {
     background-color: #424242;
     border-radius: 25px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #add-course-tile {
@@ -42,6 +46,58 @@
     border-color: #ffffff;
     padding: 31px;
     cursor: pointer;
+}
+
+.course-tile-icon {
+    padding: 16px 32px;
+    width: 48px;
+    display: inline-block;
+}
+
+.course-tile-title {
+    display: inline-block;
+    width:  calc(100% - 144px);
+    text-align: center;
+    padding-right: 32px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.course-tile-divider {
+    width: calc(100% - 32px);
+    margin: 0px 16px;
+    height: 3px;
+    color:#ffffff;
+    background-color:#ffffff;
+    border-radius: 25px;
+}
+
+.course-tile-description {
+    padding: 16px;
+    text-align: center;
+}
+
+.course-tile-component-container {
+    display: grid;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    column-gap: 2%;
+    padding: 0px 16px;
+}
+
+.course-tile-component {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    padding: 32px 8px;
+    text-align: center;
+}
+
+.course-tile-info-container {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+    padding: 16px;
 }
 
 @media screen and (max-width: 450px) {
