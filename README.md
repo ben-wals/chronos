@@ -1,2 +1,2 @@
 # Chronos
-Manage your homework and timetable better with Cronos.
+Manage your homework and timetable together with Cronos.
