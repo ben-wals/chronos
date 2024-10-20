@@ -72,9 +72,9 @@
         </div>
         <div id="login-tile">
             <h1 id="tile-title"><img src="./img/chronos.png" /> Chronos Login</h1>
-            <form id="login-form" action="auth.php">
-                <input class="text-input" type="text" placeholder="Username" id="username" required>
-                <input class="text-input" type="password" placeholder="Password" id="password" required>
+            <form id="login-form" action="./auth.php" method="post">
+                <input class="text-input" type="text" placeholder="Username" id="username" name="username" required>
+                <input class="text-input" type="password" placeholder="Password" id="password" name="password" required>
                 <p class="text-desc">No account? <a href="./sign-up.html">Sign Up</a></p>
                 <p class="text-desc"><a href="./forgot-password">Forgot Password</a></p>
                 <input type="submit" value="Login" id="submit">
