@@ -1,0 +1,35 @@
+
+#content-container {
+    text-align: center;
+    margin-top: calc(50vh - 318px);
+}
+
+#page-title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+}
+
+.page-button {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #9bbb59;
+    border-radius: 15px;
+    padding: 8px 16px;
+    margin: 0px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#page-description {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#page-button-containers {
+    margin-top: 32px;
+}

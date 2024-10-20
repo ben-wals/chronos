@@ -9,14 +9,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        div[data-text-ad], .ads-ad, .commercial-unit-desktop-top, .commercial-unit-desktop-rhs, .commercial-unit-mobile-top {
+            display: none !important;
+        }
+    </style>
 
     <!-- Tab Styling -->
     <title>Chronos</title>
     <link rel="icon" href="./img/chronos.png">
 
+    <!-- Responsive Design Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Other Meta Tags -->
+    <meta property="og:title" content="Chronos">
+    <meta property="og:description" content="Manage your homework and timetable better with Chronos.">
+    <meta property="og:url" content="http://chronos.theiceburg.net/">
+
+    <!-- Font Awesome Import -->
+    <script src="https://kit.fontawesome.com/7daaf9098f.js" crossorigin="anonymous"></script>
+
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- Page Styling -->
+    <link rel="stylesheet" href="./stylesheets/home.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+
 </head>
 <body>
-    <h1>Chronos</h1>
-    <p>Manage your homework and timetable better with Chronos</p>
-    <p>Coming Soon</p>
+    <div id="content-container">
+        <img src="./img/chronos-cropped.png"/>
+        <h1 id="page-title">Chronos</h1>
+        <p id="page-description">Manage your homework & timetable together.</p>
+        <div id="page-button-containers">
+            <a class="page-button" href="./login.html"><i class="fa-solid fa-user"></i> Login</a>
+            <a class="page-button" href="./sign-up.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+        </div>
+    </div>
 </body>
+</html>

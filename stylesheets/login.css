@@ -1,0 +1,84 @@
+#notif-bar {
+    background-color: #C0504D;
+    padding: 8px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: none;
+}
+
+#notif-close {
+    cursor: pointer;
+}
+
+#login-tile {
+    background-color: #424242;
+    display: inline-block;
+    border-radius: 25px;
+    margin-top: calc(50vh - 172px);
+    max-width: 500px;
+}
+
+#content-container {
+    text-align: center;
+}
+
+#tile-title {
+    background-color: #212121;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 20px 32px;
+    text-align: left;
+}
+
+img {
+    width: 36px;
+    margin-bottom: -6px;
+}
+
+#login-form {
+    padding: 20px 32px;
+}
+
+.text-input {
+    padding: 0px 16px;
+    width: calc(100% - 32px);
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border: 0px;
+}
+
+#submit {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #9bbb59;
+    border-radius: 15px;
+    padding: 8px 16px;
+    margin: 0px 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    border: 0px;
+    float: right;
+}
+
+.text-desc {
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-desc a {
+    color: #4F81BD;
+}

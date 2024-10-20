@@ -1,0 +1,87 @@
+<!--
+ ____  ____  _  _    _    _    __    __    __      __    ___  ____
+(  _ \( ___)( \( )  ( \/\/ )  /__\  (  )  (  )    /__\  / __)( ___)
+ ) _ < )__)  )  (    )    (  /(__)\  )(__  )(__  /(__)\( (__  )__)
+(____/(____)(_)\_)  (__/\__)(__)(__)(____)(____)(__)(__)\___)(____)
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div[data-text-ad], .ads-ad, .commercial-unit-desktop-top, .commercial-unit-desktop-rhs, .commercial-unit-mobile-top {
+            display: none !important;
+        }
+    </style>
+
+    <!-- Tab Styling -->
+    <title>Chronos | Sign Up</title>
+    <link rel="icon" href="./img/chronos.png">
+
+    <!-- Responsive Design Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Other Meta Tags -->
+    <meta property="og:title" content="Chronos">
+    <meta property="og:description" content="Chronos | Login">
+    <meta property="og:url" content="http://chronos.theiceburg.net/login">
+
+    <!-- Font Awesome Import -->
+    <script src="https://kit.fontawesome.com/7daaf9098f.js" crossorigin="anonymous"></script>
+
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- Page Styling -->
+    <link rel="stylesheet" href="./stylesheets/sign-up.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+
+</head>
+<body>
+    <div id="content-container">
+        <div id="notif-bar">
+            <script>
+
+                // Gets (if any) all the query strings from the URL
+                const urlParams = new URLSearchParams(window.location.search);
+
+                // Checks if the notif parameter has a value
+                if (urlParams.get('notif')) {
+
+                    // Outputs the value of the notifciation parameter to the page
+                    document.write(urlParams.get('notif'));
+                    // Displays the notification bar to the user (hidden by deafult)
+                    document.getElementById("notif-bar").style.display = "block";
+                }
+
+            </script>
+            <a id="notif-close" onclick="hideNotif();return false"><i class="fa-solid fa-xmark"></i></a>
+            <script type="text/javascript">
+
+                // Code is contained in the hideNotif function to allow it to run upon the press of the close anchor
+                function hideNotif() {
+
+                    // Hides the notification bar
+                    document.getElementById("notif-bar").style.display = "none"
+                }
+
+            </script>
+        </div>
+        <div id="login-tile">
+            <h1 id="tile-title"><img src="./img/chronos.png" /> Chronos Sign Up</h1>
+            <form id="login-form">
+                <input class="text-input" type="email" placeholder="Email Address" id="email" required>
+                <input class="text-input" type="text" placeholder="Username" id="username" required>
+                <input class="text-input" type="password" placeholder="Password" id="password" required>
+                <input class="text-input" type="password" placeholder="Confirm Password" id="password" required>
+                <input type="checkbox" id="tnc" required><p id="tnc-lable">I Accept the <a href="./terms-and-conditions">Terms & Conditions</a></p>
+                <p class="text-desc">Already Have An Account? <a href="./login.html">Login</a></p>
+                <input type="submit" value="Sign Up" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
