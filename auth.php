@@ -1,17 +1,31 @@
 <?php
 
+    // Starts a new session
     session_start();
 
+    // Includes the required classes
     include './classes/db.php';
 
+    // Creats a new accounts object parsing the forms username and the database name as arguments
     $acc = new acc($_POST['username'], dbName: 'chronos_acc');
     
+    // If the password inputted on the form matches that stored for the associated account
     if (password_verify($_POST['password'], $acc->getAccountInfo('Password'))) {
+        
+        // Starts a new session (by generating a new session id)
         session_regenerate_id();
+
+        // Sets the session array key of loggedin to a value of True
         $_SESSION['loggedin'] = TRUE;
+
+        // Sets the session array key of name to a value of the inputted Username
         $_SESSION['name'] = $_POST['username'];
+
+        // Sets the session array key of id to a value of the session id
         $_SESSION['id'] = $id;
+
+        // Redirects the user to the users launchpad
         header("Location: ./launchpad");
+
     }
-    
 ?>
