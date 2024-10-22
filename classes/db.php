@@ -9,7 +9,7 @@ class db {
 
     // The constructor function runs upon the instantiation of each new db object.
     // It takes the database credentials as arguments.
-    public function __construct($dbHost = 'localhost', $dbUser = 'root', $dbPass = '', $dbName = '') {
+    public function __construct($dbName, $dbHost = 'localhost', $dbUser = 'root', $dbPass = '') {
 
         // Establishes the connection to the database.
         $this->con = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName);
@@ -22,6 +22,14 @@ class db {
         
         }
     }
+
+    // The destrcutor function runs upon the destruction of a db object
+    public function __destruct() {
+
+        // Closes the connection to the database.
+        $this->con->close();
+    }
+
 }
 
 // Defines the accounts (acc) class as a child of the database (db) class.
@@ -33,10 +41,10 @@ class acc extends db {
 
     // The constructor function runs upon the instantiation of each now acc object.
     // It takes the arguments required for the db class constructor as well as a username.
-    public function __construct($username, $dbHost = 'localhost', $dbUser = 'root', $dbPass = '', $dbName = '') {
+    public function __construct($username, $dbHost = 'localhost', $dbUser = 'root', $dbPass = '', $dbName = 'chronos_acc') {
         
         // Runs the parents constructor class with the given argurments
-        parent::__construct($dbHost, $dbUser, $dbPass, $dbName);
+        parent::__construct($dbName, $dbHost, $dbUser, $dbPass);
 
         // Sets the username attribute to that which was parsed in the function 
         $this->username = $username;
@@ -66,7 +74,23 @@ class acc extends db {
 
         // Returns the results
         return $result;
+
     }
+
+    public function updateAccountInfo($dataKey, $dataValue) {
+
+        // Prepares an SQL statement to update the value of the specified field using the dataKey 
+        $stmt = $this->con->prepare('UPDATE accounts SET ' . $dataKey . ' = ' . $dataValue . ' WHERE username = ?');
+        
+        // Binds the username (as a string) to the SQL statement in the place of "?"
+        $stmt->bind_param('s', $this->username);
+
+        // Executes the SQL statement
+        $stmt->execute();
+
+    }
+
+
     
 }
 

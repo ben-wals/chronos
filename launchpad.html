@@ -1,0 +1,167 @@
+<!--
+ ____  ____  _  _    _    _    __    __    __      __    ___  ____
+(  _ \( ___)( \( )  ( \/\/ )  /__\  (  )  (  )    /__\  / __)( ___)
+ ) _ < )__)  )  (    )    (  /(__)\  )(__  )(__  /(__)\( (__  )__)
+(____/(____)(_)\_)  (__/\__)(__)(__)(____)(____)(__)(__)\___)(____)
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div[data-text-ad], .ads-ad, .commercial-unit-desktop-top, .commercial-unit-desktop-rhs, .commercial-unit-mobile-top {
+            display: none !important;
+        }
+    </style>
+
+    <!-- Tab Styling -->
+    <title>Chronos | Launchpad</title>
+    <link rel="icon" href="./img/chronos.png">
+
+    <!-- Responsive Design Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Other Meta Tags -->
+    <meta property="og:title" content="Chronos">
+    <meta property="og:description" content="Manage your homework and timetable better with Chronos.">
+    <meta property="og:url" content="http://chronos.theiceburg.net/onboarding/courses">
+
+    <!-- Font Awesome Import -->
+    <script src="https://kit.fontawesome.com/7daaf9098f.js" crossorigin="anonymous"></script>
+
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- Page Styling -->
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/nav-bar.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+    <link rel="stylesheet" href="./stylesheets/launchpad.css">
+    <link rel="stylesheet" href="./stylesheets/icon-colours.css">
+
+</head>
+<body onload="startTime(); getDate()">
+
+    <!-- Navigation Bar -->
+    <nav id="nav-bar">
+        <ul id="nav-list">
+
+            <!-- Left Side Elements -->
+            <li><a class="nav-left nav-element" href="../"><img src="./img/chronos.png" alt="Chronos Logo" id="nav-logo"></a></li>
+            <li><a id="nav-title" class="nav-left nav-element" href="./"><b>Chronos</b></a></li>
+
+            <!-- Right Side Elements -->
+            <li><a id="nav-settings" class="nav-right nav-element" href="./settings"><i class="fa-solid fa-gear"></i></a></li>
+            <li><a id="nav-launchpad" class="nav-right nav-element" href="./launchpad"><i class="fa-solid fa-rocket"></i> <span id="nav-launchpad-text">Launchpad</span></a></li>
+            <li><a id="nav-timetable" class="nav-right nav-element" href="./timetable"><i class="fa-solid fa-calendar-days"></i> Timetable</a></li>
+            <li><a id="nav-tasks" class="nav-right nav-element" href="./tasks"><i class="fa-solid fa-circle-check"></i> Tasks</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="launchpad-columns">
+        <div id="stats-row">
+            <div id="year-percentage">
+                <h1 id="date" class="col-title">Monday 1st January 2024</h1>
+                <h2 id="time"><span id="live">� </span><span id="real-time">00:00:00</span></h2>
+                <script>
+                    function startTime() {
+                        const today = new Date();
+                        let h = today.getHours();
+                        let m = today.getMinutes();
+                        let s = today.getSeconds();
+                        m = checkTime(m);
+                        s = checkTime(s);
+                        document.getElementById('real-time').innerHTML = h + ":" + m + ":" + s;
+                        setTimeout(startTime, 1);
+                    }
+
+                    function checkTime(i) {
+                        if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                        return i;
+                    }
+
+                    function getDate() {
+                        const today = new Date();
+                        document.getElementById('date').innerHTML = today.toDateString();
+                    }
+                </script>
+                <progress class="stats-progress" id="academic-year" value="33" max="100"></progress>
+                <p>Academic Year � 89%</p>
+                <progress class="stats-progress" id="calendar-year" value="33" max="100"></progress>
+                <p>Calendar Year � 89%</p>
+            </div>
+        </div>
+        <div id="timetable-row">
+            <div id="timetable">
+                <h1 class="col-title">Upcoming Events</h1>
+            </div>
+        </div>
+        <div id="tasks-row">
+            <div id="tasks">
+                <h1 class="col-title">Upcoming Tasks</h1>
+                <div class="task">
+                    <i class="fa-solid fa-atom fa-2x task-icon"></i><h2 class="task-title">Flipped Learning 19.1</h2>
+                    <h3 class="task-due-date">Due: 01/10/2024 � P5</h3>
+                    <p class="task-description">Complete the flipped learning on Stars and answer the summary questions</p>
+                    <a class="task-complete">Complete Task</a>
+                </div>
+                <div class="task">
+                    <i class="fa-solid fa-atom fa-2x task-icon"></i><h2 class="task-title">Flipped Learning 18.6</h2>
+                    <h3 class="task-due-date">Due: 01/10/2024 � P5</h3>
+                    <p class="task-description">Complete the flipped learning on Gravitational Potential Energy and answer the summary questions</p>
+                    <a class="task-complete">Complete Task</a>
+                </div>
+                <div class="task">
+                    <i class="fa-solid fa-calculator fa-2x task-icon"></i><h2 class="task-title">Exercise 8D</h2>
+                    <h3 class="task-due-date">Due: 01/10/2024 � P1</h3>
+                    <p class="task-description">Complete questions 1 to 8 and mark.</p>
+                    <a class="task-complete">Complete Task</a>
+                </div>
+                <div class="task">
+                    <i class="fa-solid fa-calculator fa-2x task-icon"></i><h2 class="task-title">Exercise 8C</h2>
+                    <h3 class="task-due-date">Due: 01/10/2024 � P1</h3>
+                    <p class="task-description">Complete a minimum of 3 questions including an exam question and mark.</p>
+                    <a class="task-complete">Complete Task</a>
+                </div>
+                <div class="task">
+                    <i class="fa-solid fa-laptop fa-2x task-icon"></i><h2 class="task-title">Developing a Coded Solution</h2>
+                    <h3 class="task-due-date">Due: 06/11/2024 � P3</h3>
+                    <p class="task-description">Complete section 3 of the coursework titled "Developing A Coded Solution" and hand in on teams.</p>
+                    <a class="task-complete">Complete Task</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="course-grades">
+                <h1 class="col-title">Course Grades</h1>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Predicted Grade</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Computer Science</td>
+                        <td>A</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Physics</td>
+                        <td>A</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>A</td>
+                        <td>A</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>

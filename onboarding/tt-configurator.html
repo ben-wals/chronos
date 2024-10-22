@@ -1,0 +1,197 @@
+<!--
+ ____  ____  _  _    _    _    __    __    __      __    ___  ____
+(  _ \( ___)( \( )  ( \/\/ )  /__\  (  )  (  )    /__\  / __)( ___)
+ ) _ < )__)  )  (    )    (  /(__)\  )(__  )(__  /(__)\( (__  )__)
+(____/(____)(_)\_)  (__/\__)(__)(__)(____)(____)(__)(__)\___)(____)
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div[data-text-ad], .ads-ad, .commercial-unit-desktop-top, .commercial-unit-desktop-rhs, .commercial-unit-mobile-top {
+            display: none !important;
+        }
+    </style>
+
+    <!-- Tab Styling -->
+    <title>Chronos | TT Configurator</title>
+    <link rel="icon" href="../img/chronos.png">
+
+    <!-- Responsive Design Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Other Meta Tags -->
+    <meta property="og:title" content="Chronos">
+    <meta property="og:description" content="Chronos | Timetable Configurator">
+    <meta property="og:url" content="http://chronos.theiceburg.net/onboarding/tt-configurator.html">
+
+    <!-- Font Awesome Import -->
+    <script src="https://kit.fontawesome.com/7daaf9098f.js" crossorigin="anonymous"></script>
+
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- Page Styling -->
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/nav-bar.css">
+    <link rel="stylesheet" href="../stylesheets/footer.css">
+    <link rel="stylesheet" href="../stylesheets/onboarding/tt-configurator.css">
+    <link rel="stylesheet" href="../stylesheets/onboarding/style.css">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="nav-bar">
+        <ul id="nav-list">
+
+            <!-- Left Side Elements -->
+            <li><a class="nav-left nav-element" href="../"><img src="../img/chronos.png" alt="Chronos Logo" id="nav-logo"></a></li>
+            <li><a id="nav-title" class="nav-left nav-element" href="../"><b>Chronos</b></a></li>
+
+            <!-- Right Side Elements -->
+            <li><a id="nav-settings" class="nav-right nav-element" href="../settings"><i class="fa-solid fa-gear"></i></a></li>
+            <li><a id="nav-launchpad" class="nav-right nav-element" href="../launchpad"><i class="fa-solid fa-rocket"></i> <span id="nav-launchpad-text">Launchpad</span></a></li>
+            <li><a id="nav-timetable" class="nav-right nav-element" href="../timetable"><i class="fa-solid fa-calendar-days"></i> Timetable</a></li>
+            <li><a id="nav-tasks" class="nav-right nav-element" href="../tasks"><i class="fa-solid fa-circle-check"></i> Tasks</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="page-content">
+        
+        <!-- Page Titles -->
+        <div id="page-title-container">
+            <h1 id="page-title"><span id="nav-frac">2 / 3 • </span>Timetable Configuration</h1>
+            <progress id="onboarding-progress" value="66" max="100"></progress>
+            <p id="onboarding-progress-desc">Onboarding Progress (66% Complete)</p>
+        </div>
+
+        <div id="tt-config-form">
+            <div class="tt-config-row" id="tt-config-first-row">
+                <h2 class="tt-config-row-title"><i class="fa-solid fa-repeat"></i> Recurrence</h2>
+                <p class="tt-config-row-desc">Select how often your timetable repeats itself.</p>
+                <div id="reccurence-options-row">
+                    <div class="recurrence-option">Weekly</div>
+                    <div class="recurrence-option">Fortnightly</div>
+                </div>
+            </div>
+            <div class="tt-config-row">
+                <h2 class="tt-config-row-title"><i class="fa-solid fa-clock"></i> Time Slices</h2>
+                <p class="tt-config-row-desc">Enter the timings of your school day. Include breaks as well as lessons.</p>
+                <table id="timeslice-table">
+                    <tr>
+                        <th>Timeslice</th>
+                        <th class="timeslice-table-day-head">Monday</th>
+                        <th class="timeslice-table-day-head">Tuesday</th>
+                        <th class="timeslice-table-day-head">Wednesday</th>
+                        <th class="timeslice-table-day-head">Thursday</th>
+                        <th class="timeslice-table-day-head">Friday</th>
+                    </tr>
+                    <tr>
+                        <td>Tutor Time<br>8:40 - 9:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Period 1<br>9:00 - 10:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Period 2<br>10:00 - 11:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Break<br>11:00 - 11:20</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Period 3<br>11:20 - 12:20</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Period 4<br>12:20 - 13:20</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Lunch<br>13:20 - 14:15</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Period 5<br>14:15 - 15:15</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Period 6<br>15:15 - 16:15</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <label for="name">Name: </label><input id="name" type="text"><br>
+                            <label for="start">Start: </label><input id="start" type="time"><label for="end"> End: </label><input id="end" type="time">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tt-config-row">
+                <h2 class="tt-config-row-title"><i class="fa-solid fa-umbrella-beach"></i> Holidays</h2>
+                <p class="tt-config-row-desc">Enter the start and end dates of any holidays throughout the academic year. Inlcude Half-Terms, Easter, Christmas and Summer.</p>
+            </div>
+            <div class="tt-config-row">
+                <h2 class="tt-config-row-title"><i class="fa-solid fa-school"></i> Days Off</h2>
+                <p class="tt-config-row-desc">Enter any Days Off you have throughout the academic year. Include bank holidays as well as training days.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul id="footer-list">
+            <li><a class="nav-left nav-element" href="../"><img src="../img/chronos.png" alt="Chronos Logo" id="nav-logo"></a></li>
+            <li><a id="nav-title" class="nav-left nav-element" href="../"><b>Chronos</b></a></li>
+            <li><span id="footer-legal" class="footer-right">Powered By <a class="footer-link" href="https://theiceburg.net">The Iceburg</a><br>© Ben Wallace <?php echo date("Y"); ?></span></li>
+            <li><span id="footer-report" class="footer-right">Found and issue with this page? Report it <a class="footer-link" href="https://github.com/ben-wals/chronos/issues/new?title=Ref%3A%20onboarding%2Ftt%20config">here</a>.</span></li>
+        </ul>
+    </footer>
+</body>
+</html>

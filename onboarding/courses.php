@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="../stylesheets/nav-bar.css">
     <link rel="stylesheet" href="../stylesheets/footer.css">
     <link rel="stylesheet" href="../stylesheets/icon-colours.css">
+    <link rel="stylesheet" href="../stylesheets/onboarding/style.css">
 
 </head>
 <body>
